@@ -14,5 +14,11 @@ namespace afwr.Controllers
 
             return View();
         }
+
+      public ActionResult MyTest()
+    {
+      ViewBag.Title = "Hello Awesomeness!";
+      return View();
+    }
     }
 }
