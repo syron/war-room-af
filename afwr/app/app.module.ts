@@ -1,8 +1,8 @@
 ﻿import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component.js';
 import { NavbarComponent } from './Components/Navbar/navbar.component.js';
+import { AppComponent } from './app.component.js';
 
 @NgModule({
     imports: [BrowserModule],
