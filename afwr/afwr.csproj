@@ -186,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.component.html" />
+    <Content Include="app\Components\Navbar\navbar.component.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -272,6 +273,7 @@
     <TypeScriptCompile Include="app\app.component.spec.ts" />
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\Components\Navbar\navbar.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
   </ItemGroup>
