@@ -12,6 +12,9 @@ var core_1 = require("@angular/core");
 var NavbarComponent = (function () {
     function NavbarComponent() {
     }
+    NavbarComponent.prototype.clicked = function () {
+        alert('test');
+    };
     return NavbarComponent;
 }());
 NavbarComponent = __decorate([
