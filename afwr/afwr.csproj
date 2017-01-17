@@ -185,6 +185,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.component.css" />
+    <Content Include="app\app.component.html" />
+    <Content Include="app\app.component.js" />
+    <Content Include="app\app.component.spec.js" />
+    <Content Include="app\app.module.js" />
+    <Content Include="app\Components\Navbar\navbar.component.html" />
+    <Content Include="app\Components\Navbar\navbar.component.js" />
+    <Content Include="app\main.js" />
     <Content Include="src\app\app.component.css" />
     <Content Include="src\app\app.component.html" />
     <Content Include="src\styles.css" />
@@ -225,6 +233,12 @@
     <Content Include="package.json" />
     <Content Include="src\tsconfig.json" />
     <Content Include="src\assets\.gitkeep" />
+    <Content Include="app\app.component.js.map" />
+    <Content Include="app\app.component.spec.js.map" />
+    <Content Include="app\app.module.js.map" />
+    <Content Include="app\Components\Navbar\navbar.component.js.map" />
+    <Content Include="app\main.js.map" />
+    <Content Include="app\assets\.gitkeep" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -273,6 +287,15 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="app\app.component.spec.ts" />
+    <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\Components\Navbar\navbar.component.ts" />
+    <TypeScriptCompile Include="app\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="app\environments\environment.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\polyfills.ts" />
+    <TypeScriptCompile Include="app\test.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />

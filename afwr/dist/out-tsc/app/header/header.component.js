@@ -8,19 +8,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'app works!';
+var HeaderComponent = (function () {
+    function HeaderComponent() {
     }
-    return AppComponent;
+    HeaderComponent.prototype.ngOnInit = function () {
+    };
+    return HeaderComponent;
 }());
-AppComponent = __decorate([
+HeaderComponent = __decorate([
     Component({
-        selector: 'app-root',
-        templateUrl: './src/app/app.component.html',
-        styleUrls: ['./src/app/app.component.css']
+        selector: 'app-header',
+        templateUrl: './header.component.html',
+        styleUrls: ['./header.component.css']
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-export { AppComponent };
-//# sourceMappingURL=C:/Private/git/war-room-af/afwr/src/app/app.component.js.map
+], HeaderComponent);
+export { HeaderComponent };
+//# sourceMappingURL=C:/Private/git/war-room-af/afwr/src/app/header/header.component.js.map

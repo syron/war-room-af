@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,20 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'app works!';
+var core_1 = require("@angular/core");
+var NavbarComponent = (function () {
+    function NavbarComponent() {
     }
-    return AppComponent;
+    NavbarComponent.prototype.ngOnInit = function () {
+    };
+    return NavbarComponent;
 }());
-AppComponent = __decorate([
-    Component({
-        selector: 'app-root',
-        templateUrl: './src/app/app.component.html',
-        styleUrls: ['./src/app/app.component.css']
+NavbarComponent = __decorate([
+    core_1.Component({
+        selector: 'app-navbar',
+        templateUrl: './navbar.component.html',
+        styleUrls: ['./navbar.component.css']
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-export { AppComponent };
-//# sourceMappingURL=C:/Private/git/war-room-af/afwr/src/app/app.component.js.map
+], NavbarComponent);
+exports.NavbarComponent = NavbarComponent;
+//# sourceMappingURL=navbar.component.js.map

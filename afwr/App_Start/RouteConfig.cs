@@ -13,7 +13,7 @@ namespace afwr
     {
       routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-      routes.IgnoreRoute("{*favicon}", new { favicon = @"(.*)(node_modules|app)(.*)" });
+      routes.IgnoreRoute("{*favicon}", new { favicon = @"(.*)(node_modules|app|src)(.*)" });
 
       
 

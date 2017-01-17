@@ -8,19 +8,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'app works!';
+var NavbarComponent = (function () {
+    function NavbarComponent() {
     }
-    return AppComponent;
+    NavbarComponent.prototype.ngOnInit = function () {
+    };
+    return NavbarComponent;
 }());
-AppComponent = __decorate([
+NavbarComponent = __decorate([
     Component({
-        selector: 'app-root',
-        templateUrl: './src/app/app.component.html',
-        styleUrls: ['./src/app/app.component.css']
+        selector: 'app-navbar',
+        templateUrl: './navbar.component.html',
+        styleUrls: ['./navbar.component.css']
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-export { AppComponent };
-//# sourceMappingURL=C:/Private/git/war-room-af/afwr/src/app/app.component.js.map
+], NavbarComponent);
+export { NavbarComponent };
+//# sourceMappingURL=C:/Private/git/war-room-af/afwr/src/app/navbar/navbar.component.js.map
