@@ -1,31 +1,30 @@
 ﻿{
   "project": {
-    "version": "1.0.0-beta.25.5",
-    "name": "myproj"
+    "version": "1.0.0-beta.21",
+    "name": "my-project"
   },
   "apps": [
     {
-      "root": "src",
+      "root": "app",
       "outDir": "dist",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
+      "assets": "assets",
       "index": "index.html",
       "main": "main.ts",
-      "test": "test.ts",
+      //"test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "",
       "mobile": false,
-      "styles": [
-        "styles.css"
-      ],
-      "scripts": [],
-      "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
+      //"styles": [
+      //  "styles.css"
+      //],
+      //"scripts": [
+      //  "../node_modules/jquery/dist/jquery.js"
+      //],
+      //"environments": {
+      //  "source": "environments/environment.ts",
+      //  "dev": "environments/environment.ts",
+      //  "prod": "environments/environment.prod.ts"
+      //}
     }
   ],
   "addons": [],
@@ -42,18 +41,6 @@
   },
   "defaults": {
     "styleExt": "css",
-    "prefixInterfaces": false,
-    "inline": {
-      "style": false,
-      "template": false
-    },
-    "spec": {
-      "class": false,
-      "component": true,
-      "directive": true,
-      "module": false,
-      "pipe": true,
-      "service": true
-    }
+    "prefixInterfaces": false
   }
 }
