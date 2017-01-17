@@ -9,22 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var jsonplaceholder_service_js_1 = require("./Services/JsonPlaceholder/jsonplaceholder.service.js");
-var AppComponent = (function () {
-    function AppComponent(placeholderService) {
-        this.placeholderService = placeholderService;
-        this.name = 'Angular';
-        placeholderService.getJson();
+var JsonPlaceholderService = (function () {
+    function JsonPlaceholderService() {
     }
-    return AppComponent;
+    JsonPlaceholderService.prototype.getJson = function () {
+        console.log("Hello World!");
+    };
+    return JsonPlaceholderService;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        templateUrl: '/app/app.component.html',
-        providers: [jsonplaceholder_service_js_1.JsonPlaceholderService]
-    }),
-    __metadata("design:paramtypes", [jsonplaceholder_service_js_1.JsonPlaceholderService])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+JsonPlaceholderService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], JsonPlaceholderService);
+exports.JsonPlaceholderService = JsonPlaceholderService;
+//# sourceMappingURL=jsonplaceholder.service.js.map

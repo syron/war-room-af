@@ -275,6 +275,7 @@
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\Components\Navbar\navbar.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\Services\JsonPlaceholder\jsonplaceholder.service.ts" />
     <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
   </ItemGroup>
   <ItemGroup>
