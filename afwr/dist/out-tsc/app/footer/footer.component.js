@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,21 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var HeaderComponent = (function () {
-    function HeaderComponent() {
+import { Component } from '@angular/core';
+var FooterComponent = (function () {
+    function FooterComponent() {
     }
-    HeaderComponent.prototype.ngOnInit = function () {
+    FooterComponent.prototype.ngOnInit = function () {
     };
-    return HeaderComponent;
+    return FooterComponent;
 }());
-HeaderComponent = __decorate([
-    core_1.Component({
-        selector: 'app-header',
-        templateUrl: './src/app/header/header.component.html',
-        styleUrls: ['./src/app/header/header.component.css']
+FooterComponent = __decorate([
+    Component({
+        selector: 'app-footer',
+        templateUrl: './src/app/footer/footer.component.html',
+        styleUrls: ['./src/app/footer/footer.component.css']
     }),
     __metadata("design:paramtypes", [])
-], HeaderComponent);
-exports.HeaderComponent = HeaderComponent;
-//# sourceMappingURL=header.component.js.map
+], FooterComponent);
+export { FooterComponent };
+//# sourceMappingURL=C:/Private/git/war-room-af/afwr/src/app/footer/footer.component.js.map

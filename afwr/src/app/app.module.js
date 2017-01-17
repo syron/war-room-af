@@ -15,6 +15,7 @@ var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var navbar_component_1 = require("./navbar/navbar.component");
 var header_component_1 = require("./header/header.component");
+var footer_component_1 = require("./footer/footer.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,7 +26,8 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             navbar_component_1.NavbarComponent,
-            header_component_1.HeaderComponent
+            header_component_1.HeaderComponent,
+            footer_component_1.FooterComponent
         ],
         imports: [
             platform_browser_1.BrowserModule,

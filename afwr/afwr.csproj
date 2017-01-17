@@ -195,6 +195,18 @@
     <Content Include="app\main.js" />
     <Content Include="src\app\app.component.css" />
     <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\footer\footer.component.css" />
+    <Content Include="src\app\footer\footer.component.html" />
+    <Content Include="src\app\footer\footer.component.js" />
+    <Content Include="src\app\footer\footer.component.spec.js" />
+    <Content Include="src\app\header\header.component.css" />
+    <Content Include="src\app\header\header.component.html" />
+    <Content Include="src\app\header\header.component.js" />
+    <Content Include="src\app\header\header.component.spec.js" />
+    <Content Include="src\app\navbar\navbar.component.css" />
+    <Content Include="src\app\navbar\navbar.component.html" />
+    <Content Include="src\app\navbar\navbar.component.js" />
+    <Content Include="src\app\navbar\navbar.component.spec.js" />
     <Content Include="src\styles.css" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
@@ -266,6 +278,12 @@
     <Content Include="tsconfig.json" />
     <Content Include="tslint.json" />
     <Content Include="Views\Home\MyTest.cshtml" />
+    <Content Include="src\app\header\header.component.js.map" />
+    <Content Include="src\app\header\header.component.spec.js.map" />
+    <Content Include="src\app\navbar\navbar.component.js.map" />
+    <Content Include="src\app\navbar\navbar.component.spec.js.map" />
+    <Content Include="src\app\footer\footer.component.js.map" />
+    <Content Include="src\app\footer\footer.component.spec.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -299,6 +317,12 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\footer\footer.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\footer\footer.component.ts" />
+    <TypeScriptCompile Include="src\app\header\header.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\header\header.component.ts" />
+    <TypeScriptCompile Include="src\app\navbar\navbar.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\navbar\navbar.component.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="src\environments\environment.ts" />
     <TypeScriptCompile Include="src\main.ts" />

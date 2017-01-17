@@ -18,8 +18,8 @@ var NavbarComponent = (function () {
 NavbarComponent = __decorate([
     Component({
         selector: 'app-navbar',
-        templateUrl: './navbar.component.html',
-        styleUrls: ['./navbar.component.css']
+        templateUrl: './src/app/navbar/navbar.component.html',
+        styleUrls: ['./src/app/navbar/navbar.component.css']
     }),
     __metadata("design:paramtypes", [])
 ], NavbarComponent);

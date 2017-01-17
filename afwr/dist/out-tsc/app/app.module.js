@@ -14,6 +14,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,7 +25,8 @@ AppModule = __decorate([
         declarations: [
             AppComponent,
             NavbarComponent,
-            HeaderComponent
+            HeaderComponent,
+            FooterComponent
         ],
         imports: [
             BrowserModule,
