@@ -1,5 +1,5 @@
 "use strict";
-require("./polyfills.ts");
+require("./polyfills");
 var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
 var core_1 = require("@angular/core");
 var environment_1 = require("./environments/environment");

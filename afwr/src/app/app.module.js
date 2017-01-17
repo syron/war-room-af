@@ -13,6 +13,7 @@ var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
+var navbar_component_1 = require("./navbar/navbar.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,7 +22,8 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         declarations: [
-            app_component_1.AppComponent
+            app_component_1.AppComponent,
+            navbar_component_1.NavbarComponent
         ],
         imports: [
             platform_browser_1.BrowserModule,
