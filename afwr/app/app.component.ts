@@ -8,6 +8,8 @@ import { JsonPlaceholderService } from './Services/JsonPlaceholder/jsonplacehold
 export class AppComponent  {
     name = 'Angular';
 
+    posts: Array<any>;
+
     constructor(private placeholderService: JsonPlaceholderService) {
         placeholderService
             .getJson()
