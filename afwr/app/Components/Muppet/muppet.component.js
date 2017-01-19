@@ -9,22 +9,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var jsonplaceholder_service_js_1 = require('./Services/JsonPlaceholder/jsonplaceholder.service.js');
-var AppComponent = (function () {
-    function AppComponent(placeholderService) {
+var jsonplaceholder_service_js_1 = require('../../Services/JsonPlaceholder/jsonplaceholder.service.js');
+exports.fileVersion = '?tmplv=' + Date.now();
+var MuppetComponent = (function () {
+    function MuppetComponent(placeholderService) {
         this.placeholderService = placeholderService;
-        this.name = 'Angular';
-        placeholderService.getJson();
+        //public itemList = [
+        //    { FirstName: "Kalle" },
+        //    { FirstName: "Olle" },
+        //];
+        this.itemList = new Array();
     }
-    AppComponent = __decorate([
+    MuppetComponent.prototype.ngOnInit = function () {
+        this.getData();
+    };
+    MuppetComponent.prototype.getData = function () {
+        //this.itemList = this.placeholderService.getJsonData("/Muppet/GetStuff");
+        this.itemList = [
+            { FirstName: "Kalle", LastName: "Kula" },
+            { FirstName: "Olle", LastName: "Bolle" },
+        ];
+    };
+    MuppetComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: '/app/app.component.html',
+            selector: 'app-muppet',
+            templateUrl: '/app/components/muppet/muppet.component.html' + exports.fileVersion,
             providers: [jsonplaceholder_service_js_1.JsonPlaceholderService]
         }), 
         __metadata('design:paramtypes', [jsonplaceholder_service_js_1.JsonPlaceholderService])
-    ], AppComponent);
-    return AppComponent;
+    ], MuppetComponent);
+    return MuppetComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.MuppetComponent = MuppetComponent;
+//# sourceMappingURL=muppet.component.js.map

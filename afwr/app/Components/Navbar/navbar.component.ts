@@ -6,7 +6,7 @@
 })
 export class NavbarComponent {
     constructor() {
-
+        
     }
     clicked() {
         alert('test');
