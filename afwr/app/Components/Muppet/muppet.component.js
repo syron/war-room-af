@@ -14,21 +14,15 @@ exports.fileVersion = '?tmplv=' + Date.now();
 var MuppetComponent = (function () {
     function MuppetComponent(placeholderService) {
         this.placeholderService = placeholderService;
-        //public itemList = [
-        //    { FirstName: "Kalle" },
-        //    { FirstName: "Olle" },
-        //];
         this.itemList = new Array();
     }
     MuppetComponent.prototype.ngOnInit = function () {
         this.getData();
     };
     MuppetComponent.prototype.getData = function () {
-        //this.itemList = this.placeholderService.getJsonData("/Muppet/GetStuff");
-        this.itemList = [
-            { FirstName: "Kalle", LastName: "Kula" },
-            { FirstName: "Olle", LastName: "Bolle" },
-        ];
+        var _this = this;
+        this.placeholderService.getJsonData("/Muppet/GetStuff")
+            .then(function (d) { return _this.itemList = d; });
     };
     MuppetComponent = __decorate([
         core_1.Component({

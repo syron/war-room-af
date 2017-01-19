@@ -9,6 +9,7 @@ export class AppComponent  {
     name = 'Angular';
 
     constructor(private placeholderService: JsonPlaceholderService) {
-        placeholderService.getJson();
+        //placeholderService.getJson()
+        //    .then(d => console.log(d));
     }
 }

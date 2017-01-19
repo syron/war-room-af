@@ -10,19 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
+require('rxjs/add/operator/toPromise');
 var JsonPlaceholderService = (function () {
     function JsonPlaceholderService(http) {
         this.http = http;
     }
     JsonPlaceholderService.prototype.getJson = function () {
-        console.log("Hello World!");
+        return this.http.get('https://jsonplaceholder.typicode.com/posts').toPromise().then(function (response) { return response.json(); }).catch(this.handleError);
     };
-    JsonPlaceholderService.prototype.getJsonData = function (url, returnData) {
-        var _this = this;
-        this.http.get(url).subscribe(function (data) { return returnData = data; }, function (err) { return _this.logError(err); });
+    JsonPlaceholderService.prototype.getJsonData = function (url) {
+        return this.http.get(url).toPromise().then(function (response) { return response.json(); }).catch(this.handleError);
     };
-    JsonPlaceholderService.prototype.logError = function (err) {
-        console.error(err);
+    JsonPlaceholderService.prototype.handleError = function (error) {
+        console.error('An error occurred', error); // for demo purposes only
+        return Promise.reject(error.message || error);
     };
     JsonPlaceholderService = __decorate([
         core_1.Injectable(), 

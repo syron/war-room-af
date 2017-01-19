@@ -14,7 +14,8 @@ var AppComponent = (function () {
     function AppComponent(placeholderService) {
         this.placeholderService = placeholderService;
         this.name = 'Angular';
-        placeholderService.getJson();
+        //placeholderService.getJson()
+        //    .then(d => console.log(d));
     }
     AppComponent = __decorate([
         core_1.Component({

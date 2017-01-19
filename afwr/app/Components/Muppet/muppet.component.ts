@@ -8,11 +8,6 @@ export var fileVersion = '?tmplv=' + Date.now();
 })
 export class MuppetComponent {
 
-    //public itemList = [
-    //    { FirstName: "Kalle" },
-    //    { FirstName: "Olle" },
-    //];
-
     public itemList = new Array();
 
     constructor(private placeholderService: JsonPlaceholderService) {}
@@ -22,10 +17,7 @@ export class MuppetComponent {
     }
 
     getData() {
-        //this.itemList = this.placeholderService.getJsonData("/Muppet/GetStuff");
-        this.itemList = [
-        { FirstName: "Kalle", LastName: "Kula" },
-        { FirstName: "Olle", LastName: "Bolle" },
-        ];
+        this.placeholderService.getJsonData("/Muppet/GetStuff")
+            .then(d => this.itemList = d);
     }
 }
