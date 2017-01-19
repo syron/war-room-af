@@ -14,8 +14,13 @@ var AppComponent = (function () {
     function AppComponent(placeholderService) {
         this.placeholderService = placeholderService;
         this.name = 'Angular';
-        placeholderService.getJson();
+        placeholderService
+            .getJson()
+            .then(function (d) { return console.log(d); });
     }
+    AppComponent.prototype.callHttp = function () {
+        console.log("callin json ...");
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
