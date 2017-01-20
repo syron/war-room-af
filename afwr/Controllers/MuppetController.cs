@@ -12,6 +12,9 @@ namespace afwr.Controllers
         [HttpGet]
         public JsonResult GetStuff()
         {
+            var isAjax = Request.IsAjaxRequest();
+
+
             List<Muppet> muppetList = new List<Muppet>();
             muppetList.Add(new Muppet()
             {

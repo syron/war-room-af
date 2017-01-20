@@ -9,11 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var http_1 = require('@angular/http');
 var jsonplaceholder_service_js_1 = require('../../Services/JsonPlaceholder/jsonplaceholder.service.js');
 exports.fileVersion = '?tmplv=' + Date.now();
 var MuppetComponent = (function () {
-    function MuppetComponent(placeholderService) {
+    function MuppetComponent(placeholderService, http) {
         this.placeholderService = placeholderService;
+        this.http = http;
         this.itemList = new Array();
     }
     MuppetComponent.prototype.ngOnInit = function () {
@@ -21,8 +23,9 @@ var MuppetComponent = (function () {
     };
     MuppetComponent.prototype.getData = function () {
         var _this = this;
-        this.placeholderService.getJsonData("/Muppet/GetStuff")
-            .then(function (d) { return _this.itemList = d; });
+        this.placeholderService.getJsonDataAjax("/Muppet/GetStuff").subscribe(function (res) { return _this.itemList = res.json(); });
+        //this.placeholderService.getJsonData("/Muppet/GetStuff")
+        //    .then(d => this.itemList = d);
     };
     MuppetComponent = __decorate([
         core_1.Component({
@@ -30,7 +33,7 @@ var MuppetComponent = (function () {
             templateUrl: '/app/components/muppet/muppet.component.html' + exports.fileVersion,
             providers: [jsonplaceholder_service_js_1.JsonPlaceholderService]
         }), 
-        __metadata('design:paramtypes', [jsonplaceholder_service_js_1.JsonPlaceholderService])
+        __metadata('design:paramtypes', [jsonplaceholder_service_js_1.JsonPlaceholderService, http_1.Http])
     ], MuppetComponent);
     return MuppetComponent;
 }());

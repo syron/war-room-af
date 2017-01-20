@@ -21,6 +21,11 @@ var JsonPlaceholderService = (function () {
     JsonPlaceholderService.prototype.getJsonData = function (url) {
         return this.http.get(url).toPromise().then(function (response) { return response.json(); }).catch(this.handleError);
     };
+    JsonPlaceholderService.prototype.getJsonDataAjax = function (url) {
+        return this.http.get(url);
+    };
+    JsonPlaceholderService.prototype.fixResult = function (result) {
+    };
     JsonPlaceholderService.prototype.handleError = function (error) {
         console.error('An error occurred', error); // for demo purposes only
         return Promise.reject(error.message || error);
