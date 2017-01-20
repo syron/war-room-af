@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { JsonPlaceholderService } from '../../Services/JsonPlaceholder/jsonplaceholder.service.js';
 export var fileVersion = '?tmplv=' + Date.now();
@@ -7,18 +7,22 @@ export var fileVersion = '?tmplv=' + Date.now();
     templateUrl: '/app/components/muppet/muppet.component.html' + fileVersion,
     providers: [JsonPlaceholderService]
 })
-export class MuppetComponent {
+export class MuppetComponent implements OnInit {
 
     public itemList = new Array();
 
     constructor(private placeholderService: JsonPlaceholderService, private http: Http) {}
 
     ngOnInit(): any {
+        console.log('ngOnInit() called.');
         this.getData();
     }
 
     getData() {
-        this.placeholderService.getJsonDataAjax("/Muppet/GetStuff").subscribe((res: Response) => this.itemList = res.json());
+        console.log('getData() called.');
+        this.placeholderService.getJsonDataAjax("/Muppet/GetStuff").subscribe((res: Response) =>
+            this.itemList = res.json()
+        );
 
         //this.placeholderService.getJsonData("/Muppet/GetStuff")
         //    .then(d => this.itemList = d);
