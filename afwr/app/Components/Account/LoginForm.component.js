@@ -9,24 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var jsonplaceholder_service_js_1 = require('./Services/JsonPlaceholder/jsonplaceholder.service.js');
+var LoginAd_1 = require('../../Models/Account/LoginAd');
 exports.fileVersion = '?tmplv=' + Date.now();
-var AppComponent = (function () {
-    function AppComponent(placeholderService) {
-        this.placeholderService = placeholderService;
-        this.name = 'Angular';
-        //placeholderService.getJson()
-        //    .then(d => console.log(d));
+var LoginFormComponent = (function () {
+    function LoginFormComponent() {
+        this.model = new LoginAd_1.LoginAd("", "");
     }
-    AppComponent = __decorate([
+    LoginFormComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: '/app/app.component.html' + exports.fileVersion,
-            providers: [jsonplaceholder_service_js_1.JsonPlaceholderService]
+            selector: 'app-loginform',
+            templateUrl: '/app/components/Account/LoginForm.component.html' + exports.fileVersion
         }), 
-        __metadata('design:paramtypes', [jsonplaceholder_service_js_1.JsonPlaceholderService])
-    ], AppComponent);
-    return AppComponent;
+        __metadata('design:paramtypes', [])
+    ], LoginFormComponent);
+    return LoginFormComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.LoginFormComponent = LoginFormComponent;
+//# sourceMappingURL=LoginForm.component.js.map

@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { JsonPlaceholderService } from '../../Services/JsonPlaceholder/jsonplaceholder.service.js';
 export var fileVersion = '?tmplv=' + Date.now();
@@ -7,7 +7,7 @@ export var fileVersion = '?tmplv=' + Date.now();
     templateUrl: '/app/components/muppet/muppet.component.html' + fileVersion,
     providers: [JsonPlaceholderService]
 })
-export class MuppetComponent {
+export class MuppetComponent implements OnInit {
 
     public itemList = new Array();
 

@@ -183,11 +183,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account\LoginAd.cs" />
     <Compile Include="Models\Muppet\Muppet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.component.html" />
+    <Content Include="app\Components\Account\LoginForm.component.html" />
     <Content Include="app\Components\Navbar\navbar.component.html" />
     <Content Include="app\Components\Muppet\muppet.component.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -276,11 +278,16 @@
     <TypeScriptCompile Include="app\app.component.spec.ts" />
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\Components\Account\LoginForm.component.ts" />
     <TypeScriptCompile Include="app\Components\Navbar\navbar.component.ts" />
     <TypeScriptCompile Include="app\Components\Muppet\muppet.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\Models\Account\LoginAd.ts" />
     <TypeScriptCompile Include="app\Services\JsonPlaceholder\jsonplaceholder.service.ts" />
     <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="Models\Account\LoginAd.cs.d.ts">
+      <DependentUpon>LoginAd.cs</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>
