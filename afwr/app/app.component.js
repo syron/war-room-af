@@ -8,9 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+<<<<<<< HEAD
 var core_1 = require('@angular/core');
 var jsonplaceholder_service_js_1 = require('./Services/JsonPlaceholder/jsonplaceholder.service.js');
 exports.fileVersion = '?tmplv=' + Date.now();
+=======
+var core_1 = require("@angular/core");
+var jsonplaceholder_service_js_1 = require("./Services/JsonPlaceholder/jsonplaceholder.service.js");
+>>>>>>> 28517e8642ccbc074f59cf2dc09ae688503acff3
 var AppComponent = (function () {
     function AppComponent(placeholderService) {
         this.placeholderService = placeholderService;
@@ -18,6 +23,7 @@ var AppComponent = (function () {
         //placeholderService.getJson()
         //    .then(d => console.log(d));
     }
+<<<<<<< HEAD
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
@@ -26,7 +32,17 @@ var AppComponent = (function () {
         }), 
         __metadata('design:paramtypes', [jsonplaceholder_service_js_1.JsonPlaceholderService])
     ], AppComponent);
+=======
+>>>>>>> 28517e8642ccbc074f59cf2dc09ae688503acff3
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        templateUrl: '/app/app.component.html',
+        providers: [jsonplaceholder_service_js_1.JsonPlaceholderService]
+    }),
+    __metadata("design:paramtypes", [jsonplaceholder_service_js_1.JsonPlaceholderService])
+], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

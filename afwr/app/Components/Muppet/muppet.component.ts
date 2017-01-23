@@ -14,11 +14,15 @@ export class MuppetComponent implements OnInit {
     constructor(private placeholderService: JsonPlaceholderService, private http: Http) {}
 
     ngOnInit(): any {
+        console.log('ngOnInit() called.');
         this.getData();
     }
 
     getData() {
-        this.placeholderService.getJsonDataAjax("/Muppet/GetStuff").subscribe((res: Response) => this.itemList = res.json());
+        console.log('getData() called.');
+        this.placeholderService.getJsonDataAjax("/Muppet/GetStuff").subscribe((res: Response) =>
+            this.itemList = res.json()
+        );
 
         //this.placeholderService.getJsonData("/Muppet/GetStuff")
         //    .then(d => this.itemList = d);
