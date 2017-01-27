@@ -1,5 +1,5 @@
 ﻿declare module server {
-	export interface LoginAd {
+	interface LoginAd {
 		userName: string;
 		password: string;
 	}

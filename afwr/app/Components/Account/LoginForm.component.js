@@ -9,16 +9,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var LoginAd_1 = require('../../Models/Account/LoginAd');
 exports.fileVersion = '?tmplv=' + Date.now();
 var LoginFormComponent = (function () {
     function LoginFormComponent() {
-        this.model = new LoginAd_1.LoginAd("", "");
     }
+    //model = new LoginAd("", "");
+    //get diagnostic() { return JSON.stringify(this.model); }
+    LoginFormComponent.prototype.ngAfterViewInit = function () {
+        console.log('ngAfterViewInit() called.');
+        this.initClickEvents();
+    };
+    LoginFormComponent.prototype.clicked = function (event) {
+        var theForm = $(event.target).closest('.form');
+        $(theForm).validate();
+        var isValid = $(theForm).valid();
+        //console.debug($(theForm));
+        alert(isValid);
+    };
+    LoginFormComponent.prototype.initClickEvents = function () {
+        $("#nisse").on("click", function (e) {
+            var theForm = $(e.target).closest('.form');
+            $(theForm).validate();
+            var isValid = $(theForm).valid();
+            //console.debug($(theForm));
+            alert(isValid);
+        });
+    };
     LoginFormComponent = __decorate([
         core_1.Component({
             selector: 'app-loginform',
-            templateUrl: '/app/components/Account/LoginForm.component.html' + exports.fileVersion
+            templateUrl: 'Account/LoginForm' + exports.fileVersion
         }), 
         __metadata('design:paramtypes', [])
     ], LoginFormComponent);

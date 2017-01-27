@@ -14,6 +14,8 @@
   <script src="~/node_modules/systemjs/dist/system.src.js"></script>
 
   <script src="~/systemjs.config.js"></script>
+
+    
   <script>
       System.import('/app/main.js').catch(function (err) { console.error(err); });
       var URL_CONTENT = '@Url.Content("~/")';
@@ -27,9 +29,13 @@
 </head>
 
 <body>
+    
   @RenderBody()
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  
 </body>
 </html>
