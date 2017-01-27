@@ -16,23 +16,21 @@ export class LoginFormComponent {
 
     ngAfterViewInit(): any {
         console.log('ngAfterViewInit() called.');
-        this.initClickEvents();
+        //this.initClickEvents();
     }
 
-    public clicked(event: JQueryEventObject) {
-        var theForm = $(event.target).closest('.form');
-        (<any>$(theForm)).validate();
+    public clicked(e: JQueryEventObject) {
+        var theForm = $(e.target).closest('.form');
+        (<any>$.validator).unobtrusive.parse($(theForm));
         var isValid = (<any>$(theForm)).valid();
-        //console.debug($(theForm));
         alert(isValid);
     }
 
     initClickEvents() {
         $("#nisse").on("click", function (e){
             var theForm = $(e.target).closest('.form');
-            (<any>$(theForm)).validate();
+            (<any>$.validator).unobtrusive.parse($(theForm));
             var isValid = (<any>$(theForm)).valid();
-            //console.debug($(theForm));
             alert(isValid);
         });
     }

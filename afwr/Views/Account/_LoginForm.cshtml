@@ -12,7 +12,7 @@
         @Html.ValidationMessageFor(m => m.Password)
     </div>
     <div class="modal-footer">
-        <button type="submit" id="nisse" >@Resources.strings.SendText</button>
+        <button type="submit" (click)="clicked($event)" id="nisse" >@Resources.strings.SendText</button>
     </div>
 </form>
 

@@ -17,21 +17,19 @@ var LoginFormComponent = (function () {
     //get diagnostic() { return JSON.stringify(this.model); }
     LoginFormComponent.prototype.ngAfterViewInit = function () {
         console.log('ngAfterViewInit() called.');
-        this.initClickEvents();
+        //this.initClickEvents();
     };
-    LoginFormComponent.prototype.clicked = function (event) {
-        var theForm = $(event.target).closest('.form');
-        $(theForm).validate();
+    LoginFormComponent.prototype.clicked = function (e) {
+        var theForm = $(e.target).closest('.form');
+        $.validator.unobtrusive.parse($(theForm));
         var isValid = $(theForm).valid();
-        //console.debug($(theForm));
         alert(isValid);
     };
     LoginFormComponent.prototype.initClickEvents = function () {
         $("#nisse").on("click", function (e) {
             var theForm = $(e.target).closest('.form');
-            $(theForm).validate();
+            $.validator.unobtrusive.parse($(theForm));
             var isValid = $(theForm).valid();
-            //console.debug($(theForm));
             alert(isValid);
         });
     };
