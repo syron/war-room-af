@@ -11,6 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var jsonplaceholder_service_js_1 = require("./Services/JsonPlaceholder/jsonplaceholder.service.js");
 exports.fileVersion = '?tmplv=' + Date.now();
+var appRoutes = [
+    { path: 'home', component: HomeComponent },
+    { path: 'about', component: AboutComponent },
+    {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    },
+    { path: '**', component: PageNotFoundComponent }
+];
 var AppComponent = (function () {
     function AppComponent(placeholderService) {
         this.placeholderService = placeholderService;

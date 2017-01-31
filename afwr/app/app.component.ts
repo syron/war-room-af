@@ -3,6 +3,21 @@ import { JsonPlaceholderService } from './Services/JsonPlaceholder/jsonplacehold
 import { RouterModule, Routes } from '@angular/router';
 
 export var fileVersion = '?tmplv=' + Date.now();
+
+
+const appRoutes: Routes = [
+    { path: 'home', component: HomeComponent },
+    { path: 'about', component: AboutComponent },
+    {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    },
+    { path: '**', component: PageNotFoundComponent }
+];
+
+
+
 @Component({
   selector: 'my-app',
   templateUrl: '/app/app.component.html' + fileVersion,
