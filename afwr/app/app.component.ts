@@ -12,9 +12,15 @@ export var fileVersion = '?tmplv=' + Date.now();
 })
 export class AppComponent  {
     name = 'Angular';
+    toggled = false;
 
     constructor(private placeholderService: JsonPlaceholderService) {
         //placeholderService.getJson()
         //    .then(d => console.log(d));
+    }
+
+    toggleMenu() {
+        this.toggled = !this.toggled;
+        console.log('Hello world', this.toggled);
     }
 }

@@ -15,9 +15,14 @@ var AppComponent = (function () {
     function AppComponent(placeholderService) {
         this.placeholderService = placeholderService;
         this.name = 'Angular';
+        this.toggled = false;
         //placeholderService.getJson()
         //    .then(d => console.log(d));
     }
+    AppComponent.prototype.toggleMenu = function () {
+        this.toggled = !this.toggled;
+        console.log('Hello world', this.toggled);
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
