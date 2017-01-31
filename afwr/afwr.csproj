@@ -180,6 +180,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MuppetController.cs" />
+    <Compile Include="Controllers\SPAController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -273,6 +274,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Muppet\" />
+    <Folder Include="Views\SPA\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
