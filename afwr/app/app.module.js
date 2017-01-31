@@ -15,6 +15,7 @@ var forms_1 = require("@angular/forms");
 var muppet_component_js_1 = require("./Components/Muppet/muppet.component.js");
 var navbar_component_js_1 = require("./Components/Navbar/navbar.component.js");
 var LoginForm_component_js_1 = require("./Components/Account/LoginForm.component.js");
+var PageNotFound_component_js_1 = require("./Components/PageNotFound/PageNotFound.component.js");
 var app_component_js_1 = require("./app.component.js");
 var AppModule = (function () {
     function AppModule() {
@@ -24,7 +25,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule],
-        declarations: [app_component_js_1.AppComponent, navbar_component_js_1.NavbarComponent, muppet_component_js_1.MuppetComponent, LoginForm_component_js_1.LoginFormComponent],
+        declarations: [app_component_js_1.AppComponent, navbar_component_js_1.NavbarComponent, muppet_component_js_1.MuppetComponent, LoginForm_component_js_1.LoginFormComponent, PageNotFound_component_js_1.PageNotFoundComponent],
         bootstrap: [app_component_js_1.AppComponent]
     }),
     __metadata("design:paramtypes", [])
