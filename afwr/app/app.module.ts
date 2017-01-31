@@ -12,7 +12,6 @@ import { PageNotFoundComponent } from './Components/PageNotFound/PageNotFound.co
 import { HomeComponent } from './Components/Home/Home.component.js';
 import { AboutComponent } from './Components/About/About.component.js';
 
-
 import { AppComponent } from './app.component.js';
 
 const appRoutes: Routes = [
