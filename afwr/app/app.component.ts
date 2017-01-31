@@ -4,8 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 export var fileVersion = '?tmplv=' + Date.now();
 
-
-
 @Component({
   selector: 'my-app',
   templateUrl: '/app/app.component.html' + fileVersion,
