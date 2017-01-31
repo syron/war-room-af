@@ -19,6 +19,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+.navbar {
+  border-bottom: 0;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -41,11 +45,12 @@ body {
   z-index: 1000;
   position: fixed;
   left: 250px;
+  top: 50px;
   width: 0;
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  background: #000;
+  background: #f8f8f8;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
@@ -59,6 +64,7 @@ body {
 #page-content-wrapper {
   width: 100%;
   position: absolute;
+  top: 50px;
   padding: 15px;
 }
 
@@ -83,16 +89,15 @@ body {
     line-height: 40px;
   }
 
-    .sidebar-nav li a {
-      display: block;
-      text-decoration: none;
-      color: #999999;
-    }
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+  }
 
       .sidebar-nav li a:hover {
         text-decoration: none;
-        color: #fff;
-        background: rgba(255,255,255,0.2);
+        color: #000;
       }
 
       .sidebar-nav li a:active,
