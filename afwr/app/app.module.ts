@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-import { LocationStrategy, HashLocationStrategy } from '@angular/router';
+import { HashLocationStrategy, Location, LocationStrategy } from '@angular/common';
 
 import { MuppetComponent } from './Components/Muppet/muppet.component.js';
 import { NavbarComponent } from './Components/Navbar/navbar.component.js';

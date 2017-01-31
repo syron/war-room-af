@@ -13,7 +13,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
-var router_2 = require("@angular/router");
+var common_1 = require("@angular/common");
 var muppet_component_js_1 = require("./Components/Muppet/muppet.component.js");
 var navbar_component_js_1 = require("./Components/Navbar/navbar.component.js");
 var LoginForm_component_js_1 = require("./Components/Account/LoginForm.component.js");
@@ -41,7 +41,7 @@ AppModule = __decorate([
         imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule, router_1.RouterModule.forRoot(appRoutes)],
         declarations: [app_component_js_1.AppComponent, navbar_component_js_1.NavbarComponent, muppet_component_js_1.MuppetComponent, LoginForm_component_js_1.LoginFormComponent, PageNotFound_component_js_1.PageNotFoundComponent, Home_component_js_1.HomeComponent, About_component_js_1.AboutComponent],
         bootstrap: [app_component_js_1.AppComponent],
-        providers: [Location, { provide: router_2.LocationStrategy, useClass: router_2.HashLocationStrategy }]
+        providers: [common_1.Location, { provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);
