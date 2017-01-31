@@ -197,6 +197,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.component.html" />
+    <Content Include="app\Components\PageNotFound\PageNotFound.component.html" />
+    <Content Include="app\Components\About\About.component.html" />
+    <Content Include="app\Components\Home\Home.component.html" />
     <Content Include="app\Components\Account\LoginForm.component.html" />
     <Content Include="app\Components\Navbar\navbar.component.html" />
     <Content Include="app\Components\Muppet\muppet.component.html" />
@@ -295,6 +298,9 @@
     <TypeScriptCompile Include="app\app.component.spec.ts" />
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\Components\PageNotFound\PageNotFound.component.ts" />
+    <TypeScriptCompile Include="app\Components\About\About.component.ts" />
+    <TypeScriptCompile Include="app\Components\Home\Home.component.ts" />
     <TypeScriptCompile Include="app\Components\Account\LoginForm.component.ts" />
     <TypeScriptCompile Include="app\Components\Navbar\navbar.component.ts" />
     <TypeScriptCompile Include="app\Components\Muppet\muppet.component.ts" />

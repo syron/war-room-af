@@ -17,7 +17,7 @@ var PageNotFoundComponent = (function () {
 PageNotFoundComponent = __decorate([
     core_1.Component({
         selector: 'app-pagenotfound',
-        templateUrl: 'PageNotFound/PageNotFound.component.html'
+        templateUrl: '/app/components/PageNotFound/PageNotFound.component.html'
     }),
     __metadata("design:paramtypes", [])
 ], PageNotFoundComponent);

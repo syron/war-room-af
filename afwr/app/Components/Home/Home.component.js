@@ -17,7 +17,7 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'app-home',
-        templateUrl: 'Home/Home.component.html'
+        templateUrl: '/app/components/Home/Home.component.html'
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);

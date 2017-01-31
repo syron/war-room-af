@@ -2,7 +2,7 @@
 
 @Component({
     selector: 'app-about',
-    templateUrl: 'About/About.component.html'
+    templateUrl: '/app/components/About/About.component.html'
     //templateUrl: '/app/components/Account/LoginForm.component.html' + fileVersion
 })
 
