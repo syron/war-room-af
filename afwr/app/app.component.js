@@ -24,6 +24,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         templateUrl: '/app/app.component.html' + exports.fileVersion,
+        styleUrls: ['/app/app.component.css'],
         providers: [jsonplaceholder_service_js_1.JsonPlaceholderService]
     }),
     __metadata("design:paramtypes", [jsonplaceholder_service_js_1.JsonPlaceholderService])

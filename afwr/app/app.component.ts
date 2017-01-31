@@ -7,6 +7,7 @@ export var fileVersion = '?tmplv=' + Date.now();
 @Component({
   selector: 'my-app',
   templateUrl: '/app/app.component.html' + fileVersion,
+  styleUrls: ['/app/app.component.css'],
   providers: [JsonPlaceholderService]
 })
 export class AppComponent  {

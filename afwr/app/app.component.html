@@ -1,13 +1,23 @@
 ﻿
-<div class="container">
+<div id="wrapper">
 
-  <app-navbar></app-navbar>
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <app-navbar></app-navbar>
+  </div>
+  <!-- /#sidebar-wrapper -->
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <router-outlet></router-outlet>
 
-  <!--<h1>Hello {{name}}</h1>
-  
- <app-muppet></app-muppet>
+          <a class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
 
-    <app-loginform></app-loginform>-->
-
-  <router-outlet></router-outlet>
 </div>
