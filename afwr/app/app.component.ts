@@ -1,5 +1,7 @@
 ﻿import { Component } from '@angular/core';
 import { JsonPlaceholderService } from './Services/JsonPlaceholder/jsonplaceholder.service.js';
+import { RouterModule, Routes } from '@angular/router';
+
 export var fileVersion = '?tmplv=' + Date.now();
 @Component({
   selector: 'my-app',
