@@ -15,8 +15,7 @@ export class AppComponent  {
     toggled = false;
 
     constructor(private placeholderService: JsonPlaceholderService) {
-        //placeholderService.getJson()
-        //    .then(d => console.log(d));
+        
     }
 
     toggleMenu() {

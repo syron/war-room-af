@@ -1,7 +1,9 @@
 ﻿import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { JsonPlaceholderService } from '../../Services/JsonPlaceholder/jsonplaceholder.service.js';
+
 export var fileVersion = '?tmplv=' + Date.now();
+
 @Component({
     selector: 'app-muppet',
     templateUrl: '/app/components/muppet/muppet.component.html' + fileVersion,
