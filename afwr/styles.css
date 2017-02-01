@@ -1,4 +1,8 @@
-﻿h1 {
+﻿body {
+  background: #f0f0f0;
+}
+
+h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
@@ -53,7 +57,6 @@ body {
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  background: #f8f8f8;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
@@ -64,10 +67,19 @@ body {
   width: 250px;
 }
 
+  #wrapper.toggled #sidebar-wrapper li span {
+    display: none;
+  }
+
 #page-content-wrapper {
   width: 100%;
   position: absolute;
   padding: 15px;
+}
+#topbar {
+  background-color: #00acc1;
+  border-radius: 0;
+  height: 82px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -85,10 +97,14 @@ body {
   padding: 0;
   list-style: none;
 }
+    .sidebar-nav li i {
+      display: initial;
+      font-size: 24px;
+    }
 
   .sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
+    text-indent: 32px;
+    line-height: 72px;
   }
 
   .sidebar-nav li a {
@@ -128,7 +144,7 @@ body {
   }
 
     #wrapper.toggled {
-      padding-left: 0;
+      padding-left: 85px;
     }
 
   #sidebar-wrapper {
@@ -136,7 +152,7 @@ body {
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    width: 0;
+    width: 85px;
   }
 
   #page-content-wrapper {

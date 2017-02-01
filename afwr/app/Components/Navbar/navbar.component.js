@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+exports.fileVersion = '?tmplv=' + Date.now();
 var NavbarComponent = (function () {
     function NavbarComponent() {
     }
@@ -20,7 +21,7 @@ var NavbarComponent = (function () {
 NavbarComponent = __decorate([
     core_1.Component({
         selector: 'app-navbar',
-        templateUrl: '/app/components/navbar/navbar.component.html',
+        templateUrl: '/app/components/navbar/navbar.component.html' + exports.fileVersion,
     }),
     __metadata("design:paramtypes", [])
 ], NavbarComponent);
